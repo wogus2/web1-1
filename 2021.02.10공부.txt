@@ -82,6 +82,21 @@ text align		CSS text center property검색
 CSS의 두가지 토대: 효과, 선택자
 
 선택자의 우선순위 id 선택자>클래스 선택자>태그 선택자
-id선
+class : 그룹핑 하다. 묶다.
+
 
 같은 우선순위일 경우 나중에 명령한 것이 적용된다.
+태그 선택자를 통해 전체적인 내용을 적용하고
+id 선택자를 통해 예외적인 내용을 적용한다.
+
+#8. 박스 모델
+block level element, inline element
+
+width height heipadding margn border
+
+#9. 박스 모델 써먹기
+
+#10. 그리드 소개
+grid 사용법
+can i use 사이트를 통해 이 기술이 웹브라우저에서 이용 가능한지 확인
+
