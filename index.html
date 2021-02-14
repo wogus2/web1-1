@@ -7,6 +7,7 @@
 </head>
 <body>
   <a href="https://namu.wiki/w/%EC%BB%B4%ED%93%A8%ED%84%B0" target="_blank" title="computer" ><h1>컴퓨터</h1></a>
+  <!--
   <input type="button" value="day" onclick="
     document.querySelector('body').style.backgroundColor = 'white';
     document.querySelector('body').style.color = 'black';
@@ -16,6 +17,22 @@
     document.querySelector('body').style.backgroundColor = 'black';
     document.querySelector('body').style.color = 'white';
     document.querySelector('a').style.color = 'white';
+  ">
+  -->
+  <input id="mode_night" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night') {
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      document.querySelector('a').style.color = 'white';
+      document.querySelector('#mode_night').value = 'day'
+    }
+    else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      document.querySelector('a').style.color = 'black';
+      document.querySelector('#mode_night').value = 'night'
+    }
   ">
   <div class="grid">
       <ol>
