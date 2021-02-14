@@ -7,31 +7,30 @@
 </head>
 <body>
   <a href="https://namu.wiki/w/%EC%BB%B4%ED%93%A8%ED%84%B0" target="_blank" title="computer" ><h1>컴퓨터</h1></a>
-  <!--
-  <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-    document.querySelector('a').style.color = 'black';
-  ">
-  <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-    document.querySelector('a').style.color = 'white';
-  ">
-  -->
   <input id="mode_night" type="button" value="night" onclick="
     var target = document.querySelector('body');
     if(this.value === 'night') {
       target.style.backgroundColor = 'black';
       target.style.color = 'white';
-      document.querySelector('a').style.color = 'white';
       document.querySelector('#mode_night').value = 'day'
+
+      var alist = document.querySelectorAll('a');
+var i = 0;
+while (i < alist.length) {
+    alist[i].style.color = 'powderblue';
+    i = i + 1;
+}
     }
     else {
       target.style.backgroundColor = 'white';
       target.style.color = 'black';
-      document.querySelector('a').style.color = 'black';
       document.querySelector('#mode_night').value = 'night'
+
+      var alist = document.querySelectorAll('a');
+var i = 0;
+while (i < alist.length) {
+    alist[i].style.color = 'powderblue';
+    i = i + 1;
     }
   ">
   <div class="grid">
@@ -53,16 +52,5 @@
       </p>
     </div>
   </div>
-
-<!--
-  <ol>
-    <li><a href="CPU.html"><font color="red">CPU</font></a></li>
-    <li><a href="메인보드.html"><font color="red">메인보드</font></a></li>
-    <li><a href="그래픽카드.html"><font color="red">그래픽카드</font></a></li>
-    <li><a href="파워.html"><font color="red">파워</font></a></li>
-    <li><a href="쿨러.html"><font color="red">쿨러</font></a></li>
-    <li><a href="케이스.html"><font color="red">케이스</font></a></li>
-  </ol>
--->
 </body>
 </html>
