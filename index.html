@@ -4,35 +4,41 @@
   <title>COMPUTER</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    function NightModeConsol(self) {
+      var target = document.querySelector('body');
+      if(self.value === 'night') {
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        document.querySelector('#mode_night').value = 'day'
+
+        var list_a = document.querySelectorAll('a');
+        var i = 0;
+        while (i < list_a.length) {
+          list_a[i].style.color = 'white';
+          i = i + 1;
+        }
+      }
+      else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        document.querySelector('#mode_night').value = 'night'
+
+        var list_a = document.querySelectorAll('a');
+        var i = 0;
+        while (i < list_a.length) {
+          list_a[i].style.color = 'black';
+          i = i + 1;
+        }
+      }
+    }
+  </script>
+
 </head>
 <body>
   <a href="https://namu.wiki/w/%EC%BB%B4%ED%93%A8%ED%84%B0" target="_blank" title="computer" ><h1>컴퓨터</h1></a>
   <input id="mode_night" type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'night') {
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      document.querySelector('#mode_night').value = 'day'
-
-      var list_a = document.querySelectorAll('a');
-      var i = 0;
-      while (i < list_a.length) {
-        list_a[i].style.color = 'white';
-        i = i + 1;
-      }
-    }
-    else {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      document.querySelector('#mode_night').value = 'night'
-
-      var list_a = document.querySelectorAll('a');
-      var i = 0;
-      while (i < list_a.length) {
-        list_a[i].style.color = 'black';
-        i = i + 1;
-      }
-    }
+    NightModeConsol(this);
   ">
   <div class="grid">
       <ol>
